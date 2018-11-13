@@ -1,14 +1,25 @@
-# 关于
+# vue-template
 
-> vue-cli2.9.6来搭建干净的项目，使用vue2.5.x+vue-router+vuex全家桶进行开发，只完成简单登录验证
+> 一个vue-cli2.9.6构建基础的初始化架构
 
-## 项目启动
+## 命令说明
 
-npm install
++ npm install 下载依赖包
++ npm run dev 启动开发服务器
++ npm run build 构建生成包
 
-npm run dev
+## 技术栈
 
-npm run build
++ vue
++ vue-router
++ vuex
++ axios
++ element-ui
+
+## 技术栈
+
++ 基础开发架构
++ 简单验证登录和退出登录
 
 ## 感谢
 喜欢的同学可以顺手给个star支持一下，谢谢！！
