@@ -1,12 +1,15 @@
-import {
-	SAVE_USERINFO,
-	SAVE_TOKEN
-} from '@/store/mutation-types.js'
+/**
+ * vuex同步操作
+ * @author lk 2018-11-08
+ */
 const mutations = {
-	[SAVE_USERINFO](state,info){
-		state.userInfo = info;
+	SET_ROLE:(state,role)=>{
+		state.role = role;
 	},
-	[SAVE_TOKEN](state,token){
+	SET_NAME:(state,name)=>{
+		state.name = name;
+	},
+	SET_TOKEN:(state,token)=>{
 		state.token = token;
 	}
 }

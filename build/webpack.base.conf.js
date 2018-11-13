@@ -2,7 +2,6 @@
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
-const vuxLoader = require('vux-loader')//配合vux使用
 const vueLoaderConfig = require('./vue-loader.conf')
 var SpritesmithPlugin = require('webpack-spritesmith')
 var ImageminPlugin = require('imagemin-webpack-plugin').default
@@ -115,7 +114,4 @@ const webpackConfig = {//新增vux使用
     child_process: 'empty'
   }
 }
-//新增vux使用
-module.exports = vuxLoader.merge(webpackConfig, {
-    plugins: ['vux-ui'],
-})
+module.exports = webpackConfig;

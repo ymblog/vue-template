@@ -1,9 +1,9 @@
 <template>
 	<div class="lt-content">
-		<h2>欢迎进入首页</h2>
-		<router-link :to="{name:'login'}" class="login-btn" v-if="!name">
-			<el-button type="primary">立即登录</el-button>
-		</router-link>
+		<h2>欢迎进入个人中心</h2>
+		<p>用户名：{{name}}</p>
+		<p>角色：{{role}}</p>
+		<el-button class="login-btn" type="primary" @click="logout">退出登录</el-button>
 	</div>
 </template>
 <script>
@@ -12,6 +12,13 @@
 	  	computed:{
 			...mapState(['name','role'])
 		},
+		methods:{
+			logout(){
+				this.$store.dispatch('logOut').then(() => {
+					this.$router.push('/login');
+				});
+			}
+		}
 	}
 </script>
 <style lang="less" scope>

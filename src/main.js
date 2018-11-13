@@ -1,14 +1,14 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
-import infiniteScroll from 'vue-infinite-scroll';
-import vueLazyload from 'vue-lazyload';
 import util from '@/assets/js/util';
+import infiniteScroll from 'vue-infinite-scroll';//滚动加载
+import vueLazyload from 'vue-lazyload';//懒加载
+import ElementUI from 'element-ui';//引入饿了么ui 正式开发请删除
+import 'element-ui/lib/theme-chalk/index.css'//引入饿了么ui 正式开发请删除
 import '@/assets/js/filter';//引入过滤器
 import '@/assets/js/directive';//引入自定义指令
 import store from '@/store/index.js';//使用vuex 不使用请删除掉
-
-Vue.config.productionTip = false;
 //懒加载
 Vue.use(vueLazyload, {
 	preLoad: 1.3,
@@ -19,11 +19,13 @@ Vue.use(vueLazyload, {
 });
 //加载更多
 Vue.use(infiniteScroll);
+Vue.config.productionTip = false;
 Vue.use(util);
+Vue.use(ElementUI);
 new Vue({
 	el: '#app',
-	store,
-	router,//使用vuex 不使用请删除掉
+	store,//使用vuex 不使用请删除掉
+	router,
 	components: { App },
 	template: '<App/>'
 })

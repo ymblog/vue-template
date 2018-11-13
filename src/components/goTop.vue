@@ -3,7 +3,6 @@
 	<i @click="goTop()" v-if="isShowTop" class="icon go-top"></i>
 </template>
 <script>
-    import {showTop,goTop} from '../utils/util';
 	export default{
 		data(){
 			return{

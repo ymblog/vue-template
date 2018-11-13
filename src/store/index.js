@@ -6,7 +6,8 @@ import getters from './getters';
 Vue.use(Vuex);
 const state = {
 	token:'',//token值
-	userInfo:''//用户信息
+	role:'',//用户角色
+	name:''//用户名称
 };
 export default new Vuex.Store({
 	state,

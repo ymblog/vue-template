@@ -1,4 +1,7 @@
-//全局自定义指令 
+/**
+ * 全局自定义指令
+ * @author lk 2018-11-08
+ */
 import Vue from 'vue';
 //输入框只能输入数字
 const number = Vue.directive('number',{

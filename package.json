@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "element-ui": "^2.4.9",
     "vue": "^2.5.2",
     "vue-infinite-scroll": "^2.0.2",
     "vue-lazyload": "^1.2.6",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1",
-    "vux": "^2.9.2"
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -58,7 +58,7 @@
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0",
-    "webpack-spritesmith": ""
+    "webpack-spritesmith": "^0.5.4"
   },
   "engines": {
     "node": ">= 6.0.0",

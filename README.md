@@ -1,15 +1,27 @@
-# vue2.5脚手架
+# demo
 
->使用vue-cli2.9.6来搭建干净的项目，使用vue2.5.x+vue-router+vuex全家桶进行开发，完成简单登录验证。
+> 使用vue-cli2.9.6来搭建项目,在搭建项目中加入雪碧图
 
-其中ajax使用[axios](https://github.com/axios/axios)、懒加载图片使用[vue-lazyload](https://github.com/hilongjw/vue-lazyload)、滚动加载更多使用[vue-infinite-scroll](https://github.com/ElemeFE/vue-infinite-scroll)、其他插件可以使用[vux](https://github.com/airyland/vux)进行开发
+## Build Setup
 
-### 项目启动
+``` bash
+# install dependencies
 npm install
+
+# serve with hot reload at localhost:8080
 npm run dev
+
+# build for production with minification
 npm run build
 
-### 项目结构
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+## What's included
+Within the download you'll find the following directories and files.
+You'll see something like this:
+
 ```
 ├── build/
 │   ├── build.js                               // 运行 npm run build 配置等
@@ -49,5 +61,5 @@ npm run build
 ├── README.md                                  // 向导文件
 ```
 
-### 感谢
-喜欢的同学可以顺手给个star支持一下，谢谢！！
+## Other
+Thank you for your support and guidance.
