@@ -73,8 +73,10 @@ export default {
         //ajax
         Vue.prototype.$ajax = service;
         //弹窗
-        let instance = '';
+        let instance = '',
+            timer = '';
         Vue.prototype.$toast = (content='系统繁忙,请重试',time=2000) => {
+            timer && clearTimeout(timer);
             if(instance == ''){
                 let toastConstructor  = Vue.extend(
                     toastComponent
