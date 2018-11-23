@@ -1,7 +1,7 @@
 <template>
 	<div class="lt-content">
 		<h2>欢迎进入首页</h2>
-		<router-link :to="{name:'login'}" class="login-btn" v-if="!name">
+		<router-link :to="{name:'login'}" class="login-btn" v-if="!data.name">
 			<el-button type="primary">立即登录</el-button>
 		</router-link>
 	</div>
@@ -10,7 +10,7 @@
 	import {mapState} from 'vuex';
 	export default{
 	  	computed:{
-			...mapState(['name','role'])
+			...mapState(['data'])
 		},
 	}
 </script>

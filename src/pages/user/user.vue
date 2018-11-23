@@ -1,8 +1,7 @@
 <template>
 	<div class="lt-content">
 		<h2>欢迎进入个人中心</h2>
-		<p>用户名：{{name}}</p>
-		<p>角色：{{role}}</p>
+		<p>用户名：{{data.name}}</p>
 		<el-button class="login-btn" type="primary" @click="logout">退出登录</el-button>
 	</div>
 </template>
@@ -10,7 +9,7 @@
 	import {mapState} from 'vuex';
 	export default{
 	  	computed:{
-			...mapState(['name','role'])
+			...mapState(['data'])
 		},
 		methods:{
 			logout(){

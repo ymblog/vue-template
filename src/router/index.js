@@ -38,13 +38,11 @@ const router = new Router({
 //登录验证 包括存储用户信息 不使用请删除掉
 router.beforeEach((to, from, next) => {
     if (to.matched.some(record => record.meta.requiresAuth)) {
-        if (common.cookie.get('token')) {
+        if (common.cookie.get(common.cookie.dataName)) {
             if(store.state.token){
                 next();
             }else{
-                store.commit('SET_NAME',common.cookie.get('name'));
-                store.commit('SET_TOKEN',common.cookie.get('token'));
-                store.commit('SET_ROLE',common.cookie.get('role'));
+                store.commit('SET_DATA',JSON.parse(common.cookie.get(common.cookie.dataName)));
                 next();
             }    
         } else {
