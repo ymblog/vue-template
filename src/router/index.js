@@ -5,8 +5,6 @@ import common from '@/assets/js/common';
 import store from '@/store/index.js';//使用vuex 不使用请删除掉
 //组件统一懒加载引入
 const index = r => require.ensure([], () => r(require('@/pages/index/index')), 'index');
-const login = r => require.ensure([], () => r(require('@/pages/login/login')), 'login');
-const user = r => require.ensure([], () => r(require('@/pages/user/user')), 'user');
 Vue.use(Util);
 Vue.use(Router);
 /* 需要验证登录的加上
@@ -19,19 +17,6 @@ const router = new Router({
         {
             path: '/',
             component: index
-        },
-        {
-            path: '/login',
-            name: 'login',
-            component: login
-        },
-        {
-            path: '/user',
-            name: 'user',
-            component: user,
-            meta:{
-                requiresAuth:true
-            }
         }
     ]
 });
