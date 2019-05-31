@@ -3,6 +3,8 @@
 		<h2>欢迎进入pc首页</h2>
 	</div>
 </template>
+<script>
+</script>
 <style lang="less" scope>
 .lt-content{
 	height:90vh;

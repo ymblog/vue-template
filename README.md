@@ -1,6 +1,6 @@
 # vue-template
 
-> 基于vue-cli构建pc站的初始化架构
+> 基于vue-cli3.x构建pc站的初始化架构
 
 ## 命令说明
 
